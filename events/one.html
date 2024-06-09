@@ -93,10 +93,12 @@
     // clientX, clientY , screenX , screenY
     // altkey , shiftkey , keyCode */
 
-    document.querySelector("images").addEventListener(
+    document.querySelector("#images").addEventListener(
       "click",
       function (e) {
-        console.log(e);
+        console.log(e.target.parentNode);
+        let removeIt = e.target.parentNode;
+        removeIt.remove();
       },
       false
     );

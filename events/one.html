@@ -62,8 +62,43 @@
     // alert("owl clicked");
     //};
 
-    document.getElementById("owl").addEventListener("click", function () {
-      alert("owl clicked again");
-    });
+    /*document.getElementById("images").addEventListener(
+      "click",
+      function (e) {
+        console.log("clicked inside the ul");
+      },
+      false
+    );
+
+    document.getElementById("owl").addEventListener(
+      "click",
+      function (e) {
+        console.log("clicked owl");
+        e.stopPropagation();
+      },
+      false
+    );
+
+    document.getElementById("google").addEventListener(
+      "click",
+      function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log("google clicked ");
+      },
+      false
+    );
+    //type , timestamp , defaultPrevented
+    //target , toElement , srcElement
+    // clientX, clientY , screenX , screenY
+    // altkey , shiftkey , keyCode */
+
+    document.querySelector("images").addEventListener(
+      "click",
+      function (e) {
+        console.log(e);
+      },
+      false
+    );
   </script>
 </html>

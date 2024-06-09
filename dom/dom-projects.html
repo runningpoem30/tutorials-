@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM-projects</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .js-subscribe-button {
+        border: none;
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-bottom: 30px;
+      }
+
+      .is-subscribe {
+        background-color: gray;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>YouTube Subscribe Button</p>
+    <button
+      onclick="
+      subscribe();
+    "
+      class="js-subscribe-button"
+    >
+      Subscribe
+    </button>
+
+    <button class="js-gaming">Gaming</button>
+    <script>
+      function subscribe() {
+        const buttonElement = document.querySelector(".js-subscribe-button");
+        if (buttonElement.innerText === "Subscribe") {
+          buttonElement.innerText = "Subscribed";
+          buttonElement.classList.add("is-subscribe");
+        } else {
+          buttonElement.innerText = "Subscribe";
+          buttonElement.classList.remove("is-subscribe");
+        }
+      }
+    </script>
+  </body>
+</html>

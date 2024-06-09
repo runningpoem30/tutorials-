@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const nums = [10, 29, 30];
+      nums.splice(2, 2, 99);
+      console.log(nums);
+
+      function getLastValue(array) {
+        const lastIndex = array.length - 1;
+        return array[lastIndex];
+      }
+
+      console.log(getLastValue([1, 20, 50, 67, 5]));
+
+      function swapArray(array) {
+        const firstIndex = array[0];
+        const lastIndex = array[array.length - 1];
+
+        array[0] = lastIndex;
+        array[array.length - 1] = firstIndex;
+
+        return array;
+      }
+      console.log(swapArray([10, 20, 30]));
+
+      for (let i = 0; i <= 10; i += 2) {
+        console.log(i);
+      }
+
+      for (let i = 5; i >= 0; i--) {
+        console.log(i);
+      }
+
+      function addOne(array) {
+        let arr = [];
+        for (let i = 0; i <= array.length - 1; i++) {
+          let nums = array[i] + 1;
+          arr.push(nums);
+        }
+        return arr;
+      }
+      console.log(addOne([2, 3, 4]));
+
+      function minMax(nums) {
+        let min = nums[0];
+        let max = nums[0];
+
+        for (let i = 0; i <= nums.length - 1; i++) {
+          if (nums[i] < min) {
+            min = nums[i];
+          }
+        }
+
+        for (let i = 0; i <= nums.length - 1; i++) {
+          if (nums[i] > max) {
+            max = nums[i];
+          }
+        }
+        return `min : ${min} , max : ${max}`;
+      }
+      console.log(minMax([20, 30, 40, 80]));
+
+      function countWords(words) {
+        const result = {};
+
+        for (let i = 0; i <= words.length - 1; i++) {
+          const word = words[i];
+          if (!result[word]) {
+            result[word] = 1;
+          } else {
+            result[word]++;
+          }
+        }
+        return result;
+      }
+      console.log(countWords(["arya", "archie", "baby", "archie"]));
+    </script>
+  </body>
+</html>

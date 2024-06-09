@@ -1,0 +1,112 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  display: flex;
+  background-color: #005f73;
+  padding: 50px;
+  margin: auto;
+}
+.links {
+  margin-top: 10px;
+  margin-left: auto;
+}
+a {
+  margin-right: 10px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+}
+header h1 {
+  font-family: sans-serif;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  font-size: 32px;
+}
+article {
+  background-image: url(office.jpeg);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-size: cover;
+  padding: 170px;
+  display: flex;
+  background-position: center;
+}
+article h1 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+article p {
+  color: white;
+  margin-bottom: 50px;
+}
+article button {
+  background-color: #ee6c4d;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+article button:hover {
+  cursor: pointer;
+  background-color: orange;
+}
+.center {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px 20px;
+}
+.services {
+  text-align: center;
+  margin-top: 40px;
+}
+.services h2 {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+.services p {
+  margin-bottom: 15px;
+}
+.about-us {
+  background-color: #f0f0f0;
+  text-align: center;
+  margin-top: 30px;
+  padding: 40px 40px;
+}
+.about-us h2 {
+  margin-bottom: 15px;
+  color: #28a745;
+}
+.about-us p {
+  font-size: 16px;
+}
+footer {
+  background-color: #005f73;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+  display: block;
+}
+.contact {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.contact h2 {
+  margin-top: 15px;
+  color: #dc3545;
+  margin-bottom: 15px;
+}
+.contact a {
+  background-color: blue;
+}

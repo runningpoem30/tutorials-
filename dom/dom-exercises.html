@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercises</title>
+  </head>
+  <body>
+    <!-- <button class="a9">9a</button>
+    <button class="b9">9b</button> -->
+    <button class="heads" onclick="chose('heads')">heads</button>
+    <button class="tails" onclick="chose('tails')">tails</button>
+    <p class="paragraph"></p>
+    <script>
+      //console.log(document.querySelector(".a9"));
+      //document.querySelector(".b9").innerHTML = "9b done!";
+
+      function chose(choice) {
+        if (choice === "heads") {
+          document.querySelector(".paragraph").innerHTML = "You chose heads";
+        } else if (choice === "tails") {
+          document.querySelector(".paragraph").innerHTML = "You chose tails";
+        }
+      }
+    </script>
+  </body>
+</html>

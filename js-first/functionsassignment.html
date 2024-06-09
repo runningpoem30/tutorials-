@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*function greet(name) {
+        if (!name) {
+          console.log("hi there!");
+        } else {
+          console.log(`Hello ${name}!`);
+        }
+      }
+
+      greet("arya");*/
+
+      /*function convertToFahrenheit(celsius) {
+        let fah = (celsius * 9) / 5 + 32;
+        console.log(fah);
+      }
+      convertToFahrenheit(25);*/
+
+      function convertTemperature(degrees, unit) {
+        if (unit == "F") {
+          degrees = ((degrees - 32) * 5) / 9;
+          unit = "C";
+        } else if (unit == "C") {
+          degrees = (degrees * 9) / 5 + 32;
+          unit = "F";
+        }
+        return [degrees, unit];
+      }
+
+      /*function convertLength(length, unit1, unit2) {
+        if (unit1 == "miles") {
+          if ((unit2 = "km")) {
+            length = length * 1.6;
+            unit2 = "km";
+          } else if (unit2 == "ft") {
+            length = length * 5280;
+            unit2 = "ft";
+          } else if (unit2 == "miles") {
+            console.log("invalid unit : miles");
+          }
+        } else if (unit1 == "km") {
+          if (unit2 == "miles") {
+            length = length / 1.6;
+            unit2 = "miles";
+          } else if (unit2 == "ft") {
+            length = length * 3281;
+            unit2 = "ft";
+          } else if (unit2 == "km") {
+            console.log("invalid unit : km ");
+          }
+        } else if (unit1 == "ft") {
+          if (unit2 == "km") {
+            length = length / 3281;
+            unit2 = "km";
+          } else if (unit2 == "miles") {
+            length = length / 5280;
+            unit2 = "miles";
+          } else if (unit2 == "ft") {
+            console.log("invalid unit : ft ");
+          }
+        }
+        return [length, unit1, unit2];
+      }*/
+      function convertLength(length, unit1, unit2) {
+        if (unit1 == "miles") {
+          if (unit2 == "km") {
+            length = length * 1.6;
+            unit2 = "km";
+          } else if (unit2 == "ft") {
+            length = length * 5280;
+            unit2 = "ft";
+          } else if (unit2 == "miles") {
+            console.log("invalid unit: miles");
+          }
+        } else if (unit1 == "km") {
+          if (unit2 == "miles") {
+            length = length / 1.6;
+            unit2 = "miles";
+          } else if (unit2 == "ft") {
+            length = length * 3281; // Corrected from 3281
+            unit2 = "ft";
+          } else if (unit2 == "km") {
+            console.log("invalid unit: km");
+          }
+        } else if (unit1 == "ft") {
+          if (unit2 == "km") {
+            length = length / 3281; // Corrected from 3281
+            unit2 = "km";
+          } else if (unit2 == "miles") {
+            length = length / 5280;
+            unit2 = "miles";
+          } else if (unit2 == "ft") {
+            console.log("invalid unit: ft");
+          }
+        }
+        return [length, unit1, unit2];
+      }
+
+      console.log(convertLength(600, "ft", "ft"));
+      console.log(convertLength(5, "miles", "ft"));
+      console.log(convertLength(5, "miles", "ft"));
+      console.log(convertLength(5, "ft", "miles"));
+    </script>
+  </body>
+</html>

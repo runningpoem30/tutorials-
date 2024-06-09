@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url("imgur.jpg");
+  color: white;
+  padding: 50px 20px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header h1 {
+}
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #0056b3;
+}
+/* .one {
+  margin: 10px 10px;
+  border: 5px solid blue;
+}
+.two {
+  border: 5px solid blue;
+} */
+.features {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.one:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.one {
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: sans-serif;
+}
+.one h2 {
+  text-align: center;
+}
+footer {
+  background-color: #333;
+  text-align: center;
+  color: white;
+  padding: 10px 20px;
+  font-family: sans-serif;
+}

@@ -11,10 +11,14 @@
     <button id="stop">Stop</button>
   </body>
   <script>
-    const sayDate = function (str) {
+    const intervalID = setInterval(sayDate, 1000, "hi");
+    clearInterval(intervalID);
+
+    document.querySelector("#start").innerHTML = function (str) {
       console.log(str, Date.now());
+      setInterval(sayDate, 1000, "hi");
     };
 
-    setInterval(sayDate, 1000, "hi  ");
+    document.querySelector("#stop").innerHTML = function () {};
   </script>
 </html>

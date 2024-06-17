@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Number Guessing Game</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="../styles.css" />
   </head>
-  <body  color: #fff">
+  <body style="color: #fff">
     <nav>
       <a href="/" aria-current="page">Home</a>
       <a target="_blank" href="https://www.youtube.com/@chaiaurcode"
@@ -33,7 +31,10 @@
     };
     let IntervalId;
     document.querySelector("#start").addEventListener("click", function () {
-      IntervalId = setInterval(changeBgColor, 1000);
+      if (!IntervalId) {
+        IntervalId = setInterval(changeBgColor, 1000);
+      }
+
       function changeBgColor() {
         document.body.style.backgroundColor = randomColor();
       }
@@ -41,6 +42,7 @@
 
     document.querySelector("#stop").addEventListener("click", function () {
       clearInterval(IntervalId);
+      IntervalId = null;
     });
   </script>
 </html>

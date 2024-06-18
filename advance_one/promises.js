@@ -21,13 +21,12 @@ new Promise(function (resolve, reject) {
   console.log("async 2 resolved");
 });
 
+const PromiseThree = new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    resolve({ username: "chai", email: "chai@example.com" });
+  }, 1000);
+});
 
-new PromiseThree = new Promise(function(resolve , reject){
-  setTimeout(function() {
-    resolve({username : "chai" , email : "chai@example.com"})
-  } , 1000)
-})
-
-PromiseThree.then(function(user){
+PromiseThree.then(function (user) {
   console.log(user);
-})
+});

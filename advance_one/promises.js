@@ -98,11 +98,22 @@
 //   .catch((error) => console.log(error));
 // n;
 
-let a = 10;
-let b = 20;
-let result = a + b;
-let resultFromServer = await fetch(
-  "https://jsonplaceholder.typicode.com/users"
-);
+// let a = 10;
+// let b = 20;
+// let result = a + b;
+// async function getData() {
+//   let resultFromServer = await fetch(
+//     "https://jsonplaceholder.typicode.com/users"
+//   );
+//   console.log(await resultFromServer.json());
+// }
 
-console.log(resultFromServer);
+fetch("https://jsonplaceholder.typicode.com/users")
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+
+// getData();

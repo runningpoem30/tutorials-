@@ -3,17 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
+    <div class="header"><h1 class="heading">Weather App</h1></div>
+
+    <div id="input">
       <input id="city-input" type="text" placeholder="enter city name" />
       <button id="search">Search</button>
     </div>
-    <div>
-      <p id="city-name">City Name</p>
-      <p id="city-time">City Time</p>
-      <p id="city-temp">City Temperature</p>
+    <div id="info">
+      <p id="city-name">ranchi</p>
+      <p id="city-time"></p>
+      <p id="city-temp"></p>
     </div>
     <script src="script.js"></script>
   </body>

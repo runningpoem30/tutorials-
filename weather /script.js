@@ -19,5 +19,7 @@ button.addEventListener("click", async () => {
 
   cityName.innerText = `${result.location.name} , ${result.location.region} , ${result.location.country}`;
 
-  cityTime.innerText = ``;
+  cityTime.innerText = `${result.location.localtime}`;
+
+  cityTemp.innerText = `${result.current.temp_c} °C`;
 });

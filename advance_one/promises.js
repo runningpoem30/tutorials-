@@ -117,5 +117,3 @@ fetch("https://jsonplaceholder.typicode.com/users")
   });
 
 // getData();
-#fuck this shit   
-gfkhjk

@@ -117,3 +117,7 @@ fetch("https://jsonplaceholder.typicode.com/users")
   });
 
 // getData();
+const getComputedStyle{
+
+
+}

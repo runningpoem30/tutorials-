@@ -27,3 +27,12 @@ const tea = new createUser("tea" , 250)
 chai.printMe()
 
 
+let userOne = {
+  email : "arya@gmail",
+  upi : "arya@ybl"
+}
+
+let userTwo = userOne ;
+userTwo.email = "archie@gmail" 
+console.log(userOne)
+console.log(userTwo)
